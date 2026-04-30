@@ -1,0 +1,80 @@
+services:
+
+  # ── Redis ─────────────────────────────────────────────────────────────────
+  redis:
+    image: redis:7-alpine
+    container_name: redis
+    ports:
+      - "6379:6379"
+    command: >
+      redis-server
+      --maxmemory 200mb
+      --maxmemory-policy allkeys-lru
+      --save ""
+    networks:
+      - tarea1_net
+
+  # ── Metrics Service ────────────────────────────────────────────────────────
+  metrics_service:
+    build: ./metrics_service
+    container_name: metrics_service
+    ports:
+      - "8003:8003"
+    networks:
+      - tarea1_net
+    restart: unless-stopped
+
+  # ── Response Generator ─────────────────────────────────────────────────────
+  response_generator:
+    build: ./response_generator
+    container_name: response_generator
+    ports:
+      - "8002:8002"
+    environment:
+      - METRICS_URL=http://metrics_service:8003
+      - DATA_CSV=/data/open_buildings.csv
+    volumes:
+      - ./data:/data:ro
+    depends_on:
+      - metrics_service
+    networks:
+      - tarea1_net
+    restart: unless-stopped
+
+  # ── Cache Service ──────────────────────────────────────────────────────────
+  cache_service:
+    build: ./cache_service
+    container_name: cache_service
+    ports:
+      - "8001:8001"
+    environment:
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+      - METRICS_URL=http://metrics_service:8003
+      - RESPONSE_GEN_URL=http://response_generator:8002
+      - TTL_SECONDS=60
+    depends_on:
+      - redis
+      - metrics_service
+      - response_generator
+    networks:
+      - tarea1_net
+    restart: unless-stopped
+
+  # ── Traffic Generator ──────────────────────────────────────────────────────
+  traffic_generator:
+    build: ./traffic_generator
+    container_name: traffic_generator
+    environment:
+      - CACHE_URL=http://cache_service:8001
+      - METRICS_URL=http://metrics_service:8003
+    command: python app.py --distribution both --queries 500 --rate 10
+    depends_on:
+      - cache_service
+      - metrics_service
+    networks:
+      - tarea1_net
+
+networks:
+  tarea1_net:
+    driver: bridge

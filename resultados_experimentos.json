@@ -1,0 +1,410 @@
+[
+  {
+    "by_query_type": {
+      "Q1": {
+        "hits": 243,
+        "misses": 20
+      },
+      "Q2": {
+        "hits": 85,
+        "misses": 19
+      },
+      "Q3": {
+        "hits": 54,
+        "misses": 18
+      },
+      "Q4": {
+        "hits": 23,
+        "misses": 29
+      },
+      "Q5": {
+        "hits": 39,
+        "misses": 10
+      }
+    },
+    "cache_efficiency": -7.9438,
+    "elapsed_seconds": 32.3,
+    "errors": 0,
+    "hit_rate": 0.8222,
+    "hits": 444,
+    "latency_all": {
+      "avg": 13.128068836979896,
+      "p50": 0.34737586975097656,
+      "p95": 57.19900131225586
+    },
+    "latency_hits": {
+      "avg": 0.3121597272855742,
+      "p50": 0.2827644348144531,
+      "p95": 0.5013942718505859
+    },
+    "latency_misses": {
+      "avg": 46.12759997447332,
+      "p50": 46.86236381530762,
+      "p95": 65.59443473815918
+    },
+    "miss_rate": 0.1778,
+    "misses": 96,
+    "throughput_qps": 16.71,
+    "total_queries": 540,
+    "experiment": "LRU_200MB_TTL60_Zipf",
+    "eviction_rate": 0.0,
+    "evicted_keys": 0
+  },
+  {
+    "by_query_type": {
+      "Q1": {
+        "hits": 241,
+        "misses": 20
+      },
+      "Q2": {
+        "hits": 75,
+        "misses": 18
+      },
+      "Q3": {
+        "hits": 49,
+        "misses": 16
+      },
+      "Q4": {
+        "hits": 11,
+        "misses": 32
+      },
+      "Q5": {
+        "hits": 28,
+        "misses": 10
+      }
+    },
+    "cache_efficiency": -8.9086,
+    "elapsed_seconds": 32.6,
+    "errors": 0,
+    "hit_rate": 0.808,
+    "hits": 404,
+    "latency_all": {
+      "avg": 14.49506274805773,
+      "p50": 0.3669261932373047,
+      "p95": 58.507680892944336
+    },
+    "latency_hits": {
+      "avg": 0.31013535981131074,
+      "p50": 0.29206275939941406,
+      "p95": 0.4875659942626953
+    },
+    "latency_misses": {
+      "avg": 47.70436634620031,
+      "p50": 46.66566848754883,
+      "p95": 65.72365760803223
+    },
+    "miss_rate": 0.192,
+    "misses": 96,
+    "throughput_qps": 15.34,
+    "total_queries": 500,
+    "experiment": "LFU_200MB_TTL60_Zipf",
+    "eviction_rate": 0.0,
+    "evicted_keys": 0
+  },
+  {
+    "by_query_type": {
+      "Q1": {
+        "hits": 237,
+        "misses": 20
+      },
+      "Q2": {
+        "hits": 77,
+        "misses": 16
+      },
+      "Q3": {
+        "hits": 61,
+        "misses": 17
+      },
+      "Q4": {
+        "hits": 17,
+        "misses": 22
+      },
+      "Q5": {
+        "hits": 23,
+        "misses": 10
+      }
+    },
+    "cache_efficiency": -7.5525,
+    "elapsed_seconds": 32.4,
+    "errors": 0,
+    "hit_rate": 0.83,
+    "hits": 415,
+    "latency_all": {
+      "avg": 12.594546212090385,
+      "p50": 0.33211708068847656,
+      "p95": 57.225704193115234
+    },
+    "latency_hits": {
+      "avg": 0.30830911843173475,
+      "p50": 0.28514862060546875,
+      "p95": 0.4913806915283203
+    },
+    "latency_misses": {
+      "avg": 45.93183293062098,
+      "p50": 44.05379295349121,
+      "p95": 66.30110740661621
+    },
+    "miss_rate": 0.17,
+    "misses": 85,
+    "throughput_qps": 15.43,
+    "total_queries": 500,
+    "experiment": "LRU_50MB_TTL60_Zipf",
+    "eviction_rate": 0.0,
+    "evicted_keys": 0
+  },
+  {
+    "by_query_type": {
+      "Q1": {
+        "hits": 227,
+        "misses": 20
+      },
+      "Q2": {
+        "hits": 92,
+        "misses": 20
+      },
+      "Q3": {
+        "hits": 49,
+        "misses": 19
+      },
+      "Q4": {
+        "hits": 12,
+        "misses": 22
+      },
+      "Q5": {
+        "hits": 29,
+        "misses": 10
+      }
+    },
+    "cache_efficiency": -8.1456,
+    "elapsed_seconds": 32.5,
+    "errors": 0,
+    "hit_rate": 0.818,
+    "hits": 409,
+    "latency_all": {
+      "avg": 13.409516936429664,
+      "p50": 0.3597736358642578,
+      "p95": 56.884050369262695
+    },
+    "latency_hits": {
+      "avg": 0.3138049016080451,
+      "p50": 0.2808570861816406,
+      "p95": 0.5006790161132812
+    },
+    "latency_misses": {
+      "avg": 46.1666872213175,
+      "p50": 45.7155704498291,
+      "p95": 65.87052345275879
+    },
+    "miss_rate": 0.182,
+    "misses": 91,
+    "throughput_qps": 15.37,
+    "total_queries": 500,
+    "experiment": "LRU_500MB_TTL60_Zipf",
+    "eviction_rate": 0.0,
+    "evicted_keys": 0
+  },
+  {
+    "by_query_type": {
+      "Q1": {
+        "hits": 188,
+        "misses": 50
+      },
+      "Q2": {
+        "hits": 67,
+        "misses": 35
+      },
+      "Q3": {
+        "hits": 31,
+        "misses": 29
+      },
+      "Q4": {
+        "hits": 13,
+        "misses": 44
+      },
+      "Q5": {
+        "hits": 28,
+        "misses": 15
+      }
+    },
+    "cache_efficiency": -15.7979,
+    "elapsed_seconds": 32.9,
+    "errors": 0,
+    "hit_rate": 0.654,
+    "hits": 327,
+    "latency_all": {
+      "avg": 22.215635957193587,
+      "p50": 21.001815795898438,
+      "p95": 59.72409248352051
+    },
+    "latency_hits": {
+      "avg": 0.29331463921689843,
+      "p50": 0.26345252990722656,
+      "p95": 0.4706382751464844
+    },
+    "latency_misses": {
+      "avg": 46.21319963752879,
+      "p50": 46.48232460021973,
+      "p95": 65.59014320373535
+    },
+    "miss_rate": 0.346,
+    "misses": 173,
+    "throughput_qps": 15.19,
+    "total_queries": 500,
+    "experiment": "LRU_200MB_TTL10_Zipf",
+    "eviction_rate": 0.0,
+    "evicted_keys": 0
+  },
+  {
+    "by_query_type": {
+      "Q1": {
+        "hits": 215,
+        "misses": 20
+      },
+      "Q2": {
+        "hits": 96,
+        "misses": 19
+      },
+      "Q3": {
+        "hits": 48,
+        "misses": 18
+      },
+      "Q4": {
+        "hits": 11,
+        "misses": 31
+      },
+      "Q5": {
+        "hits": 33,
+        "misses": 9
+      }
+    },
+    "cache_efficiency": -8.4468,
+    "elapsed_seconds": 32.3,
+    "errors": 0,
+    "hit_rate": 0.806,
+    "hits": 403,
+    "latency_all": {
+      "avg": 13.685359028316222,
+      "p50": 0.34427642822265625,
+      "p95": 54.70013618469238
+    },
+    "latency_hits": {
+      "avg": 0.3005269147622082,
+      "p50": 0.2810955047607422,
+      "p95": 0.4794597625732422
+    },
+    "latency_misses": {
+      "avg": 44.788680125757594,
+      "p50": 42.82951354980469,
+      "p95": 66.17379188537598
+    },
+    "miss_rate": 0.194,
+    "misses": 97,
+    "throughput_qps": 15.46,
+    "total_queries": 500,
+    "experiment": "LRU_200MB_TTL300_Zipf",
+    "eviction_rate": 0.0,
+    "evicted_keys": 0
+  },
+  {
+    "by_query_type": {
+      "Q1": {
+        "hits": 76,
+        "misses": 20
+      },
+      "Q2": {
+        "hits": 95,
+        "misses": 20
+      },
+      "Q3": {
+        "hits": 62,
+        "misses": 19
+      },
+      "Q4": {
+        "hits": 46,
+        "misses": 58
+      },
+      "Q5": {
+        "hits": 94,
+        "misses": 10
+      }
+    },
+    "cache_efficiency": -11.9488,
+    "elapsed_seconds": 32.9,
+    "errors": 0,
+    "hit_rate": 0.746,
+    "hits": 373,
+    "latency_all": {
+      "avg": 18.24066589513654,
+      "p50": 0.41675567626953125,
+      "p95": 61.21182441711426
+    },
+    "latency_hits": {
+      "avg": 0.31173708611455103,
+      "p50": 0.2803802490234375,
+      "p95": 0.5278587341308594
+    },
+    "latency_misses": {
+      "avg": 47.95826138473871,
+      "p50": 48.60401153564453,
+      "p95": 67.40593910217285
+    },
+    "miss_rate": 0.254,
+    "misses": 127,
+    "throughput_qps": 15.2,
+    "total_queries": 500,
+    "experiment": "LRU_200MB_TTL60_Uniform",
+    "eviction_rate": 0.0,
+    "evicted_keys": 0
+  },
+  {
+    "by_query_type": {
+      "Q1": {
+        "hits": 82,
+        "misses": 20
+      },
+      "Q2": {
+        "hits": 88,
+        "misses": 20
+      },
+      "Q3": {
+        "hits": 51,
+        "misses": 20
+      },
+      "Q4": {
+        "hits": 52,
+        "misses": 64
+      },
+      "Q5": {
+        "hits": 93,
+        "misses": 10
+      }
+    },
+    "cache_efficiency": -12.4997,
+    "elapsed_seconds": 32.8,
+    "errors": 0,
+    "hit_rate": 0.732,
+    "hits": 366,
+    "latency_all": {
+      "avg": 18.80257325217551,
+      "p50": 0.41556358337402344,
+      "p95": 59.85307693481445
+    },
+    "latency_hits": {
+      "avg": 0.2990505083011148,
+      "p50": 0.2734661102294922,
+      "p95": 0.49376487731933594
+    },
+    "latency_misses": {
+      "avg": 47.457404990694414,
+      "p50": 47.77860641479492,
+      "p95": 66.9240951538086
+    },
+    "miss_rate": 0.268,
+    "misses": 134,
+    "throughput_qps": 15.24,
+    "total_queries": 500,
+    "experiment": "LFU_200MB_TTL60_Uniform",
+    "eviction_rate": 0.0,
+    "evicted_keys": 0
+  }
+]
