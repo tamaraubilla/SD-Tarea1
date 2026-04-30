@@ -48,7 +48,7 @@ Plataforma de caché distribuida para consultas de densidad de edificaciones sob
 
 ```bash
 git clone https://github.com/tamaraubilla/SD-Tarea1.git
-cd tarea1
+cd SD-TAREA1
 ```
 
 ## Ejecución
